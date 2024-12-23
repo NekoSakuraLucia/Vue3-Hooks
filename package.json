@@ -1,0 +1,34 @@
+{
+  "name": "vue3-hooks",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NekoSakuraLucia/Vue3-Hooks.git"
+  },
+  "keywords": [
+    "Vue3",
+    "TypeScript",
+    "Hooks"
+  ],
+  "author": "NekoSakuraLucia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NekoSakuraLucia/Vue3-Hooks/issues"
+  },
+  "homepage": "https://github.com/NekoSakuraLucia/Vue3-Hooks#readme",
+  "dependencies": {
+    "@vue/reactivity": "^3.5.13",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1"
+  }
+}
