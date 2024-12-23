@@ -7,10 +7,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
+    "declarationMap": true,
     "rootDir": "./src",
     "outDir": "./dist",
-    "declarationMap": true,
     "allowJs": true
   },
   "include": [
