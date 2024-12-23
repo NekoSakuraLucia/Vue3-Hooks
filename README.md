@@ -22,3 +22,16 @@ const [count, setCount] = useState(0);
 const increment = () => setCount(count + 1);
 </script>
 ```
+
+- `useEffect` Hook
+```vue
+<script setup lang="ts">
+import { useState, useEffect } from "vue3-hooks";
+
+const [count, setCount] = useState(5);
+
+useEffect(() => {
+  console.log(`Count changed: ${count.value}`);
+});
+</script>
+```
