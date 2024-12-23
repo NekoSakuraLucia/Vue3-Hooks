@@ -9,3 +9,16 @@ A TypeScript package that brings React-style hooks to Vue 3, allowing you to use
 - **`useMemo`**: A hook to memoize values for performance optimization.
 - **`useCallback`**: A hook to memoize functions for optimal performance.
 - **`useReducer`**: A hook to manage state using a reducer function (like Redux).
+
+## Exmaple Usage
+
+- `useState` Hook
+```vue
+<script setup lang="ts">
+import { useState } from "vue3-hooks";
+
+const [count, setCount] = useState(0);
+
+const increment = () => setCount(count + 1);
+</script>
+```
