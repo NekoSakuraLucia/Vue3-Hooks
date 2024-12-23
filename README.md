@@ -15,7 +15,7 @@ A TypeScript package that brings React-style hooks to Vue 3, allowing you to use
 - `useState` Hook
 ```vue
 <script setup lang="ts">
-import { useState } from "vue3-hooks";
+import { useState } from "vue3-hooks-react-style";
 
 const [count, setCount] = useState(0);
 
@@ -26,7 +26,7 @@ const increment = () => setCount(count + 1);
 - `useEffect` Hook
 ```vue
 <script setup lang="ts">
-import { useState, useEffect } from "vue3-hooks";
+import { useState, useEffect } from "vue3-hooks-react-style";
 
 const [count, setCount] = useState(5);
 
