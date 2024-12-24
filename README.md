@@ -75,6 +75,38 @@ const increment = useCallback(() => {
 </script>
 ```
 
+- `useReducer` Hook
+```vue
+<script setup lang="ts">
+import { useReducer } from "vue3-hooks-react-style";
+
+type CounterState = { count: number };
+type CounterAction =
+  | { type: "increment"; payload?: number }
+  | { type: "decrement"; payload?: number }
+  | { type: "reset" };
+
+const counterReducer = (state: CounterState, action: CounterAction): CounterState => {
+  switch (action.type) {
+    case "increment":
+      return { count: state.count + (action.payload ?? 1) };
+    case "decrement":
+      return { count: state.count - (action.payload ?? 1) };
+    case "reset":
+      return { count: 0 };
+    default:
+      throw new Error(`Unknown action type`);
+  }
+};
+
+const [state, dispatch] = useReducer(counterReducer, { count: 0 });
+
+const increment = () => dispatch({ type: "increment" });
+const decrement = () => dispatch({ type: "decrement" });
+const reset = () => dispatch({ type: "reset" });
+</script>
+```
+
 ## npm Package Link
 For more details and updates, check out our package on [npm](https://www.npmjs.com/package/vue3-hooks-react-style).
 
