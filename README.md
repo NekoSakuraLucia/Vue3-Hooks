@@ -44,6 +44,37 @@ useEffect(() => {
 </script>
 ```
 
+- `useMemo` Hook
+```vue
+<script setup lang="ts">
+import { useState, useMemo } from 'vue3-hooks-react-style';
+
+const [count, setCount] = useState(0);
+const [multiplier, setMultiplier] = useState(1);
+
+const multipliedValue = useMemo(() => {
+  return count.value * multiplier.value;
+}, [count.value, multiplier.value]);
+
+const increment = () => setCount(count.value + 1);
+const changeMultiplier = () => setMultiplier(multiplier.value + 1);
+</script>
+```
+
+- `useCallback` Hook
+```vue
+<script setup lang="ts">
+import { useCallback, useState } from "vue3-hooks-react-style";
+
+const [count, setCount] = useState(0);
+
+const increment = useCallback(() => {
+  console.log("Incrementing count...");
+  setCount(count.value + 1);
+}, [count]);
+</script>
+```
+
 ## npm Package Link
 For more details and updates, check out our package on [npm](https://www.npmjs.com/package/vue3-hooks-react-style).
 
